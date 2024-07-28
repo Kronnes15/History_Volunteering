@@ -9,28 +9,31 @@
 </head>
 <body>
     <header>
-        <h1>Історія відправлень допомоги </h1>
+        <h1 id="main-header">Історія відправлень допомоги</h1>
+        <div id="language-selector">
+            <button onclick="changeLanguage('uk')">Українська</button>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('fr')">Français</button>
+        </div>
     </header>
     <main>
         <section class="description">
-            <p>Щиро дякуємо мешканцям за їхню невтомну допомогу і підтримку. 
+            <p id="thank-you-message">
+                Щиро дякуємо мешканцям за їхню невтомну допомогу і підтримку. 
                 Ваша великодушність і турбота, а також речі, які ви приносите для українських людей, мають величезне значення. 
-                Ваша доброта і співчуття є справжнім джерелом надії і натхнення.<br>
-            <br>
+                Ваша доброта і співчуття є справжнім джерелом надії і натхнення.<br><br>
 
-            We extend our heartfelt gratitude to the residents for their tireless help and unwavering support.
-            Your generosity and care, along with the items you bring for the Ukrainian people, are invaluable. 
-            <br> Your kindness and compassion are a true source of hope and inspiration. 
-            <br>
-            <br>
-            Nous exprimons notre profonde gratitude aux habitants pour leur aide infatigable et leur soutien indéfectible. <br>
-            Votre générosité et votre sollicitude, ainsi que les articles que vous apportez pour le peuple ukrainien, sont inestimables. 
-            Votre bonté et votre compassion sont une véritable source d'espoir et d'inspiration.
-        </p>    
+                We extend our heartfelt gratitude to the residents for their tireless help and unwavering support.
+                Your generosity and care, along with the items you bring for the Ukrainian people, are invaluable. 
+                Your kindness and compassion are a true source of hope and inspiration.<br><br>
 
+                Nous exprimons notre profonde gratitude aux habitants pour leur aide infatigable et leur soutien indéfectible. 
+                Votre générosité et votre sollicitude, ainsi que les articles que vous apportez pour le peuple ukrainien, sont inestimables. 
+                Votre bonté et votre compassion sont une véritable source d'espoir et d'inspiration.
+            </p>
         </section>
         <section class="gallery">
-            <h2></h2>
+            <h2>Посилку отримала школа клас психології для релаксу і реабілітації діток</h2>
             <button onclick="togglePhotos('photos1.html', 'gallery1', this)">Розгорнути фото</button>
             <div id="gallery1" class="photo-container"></div>
             
@@ -49,5 +52,6 @@
         <p>&copy; 2024 Мій Сайт. Всі права захищені.</p>
     </footer>
     <script src="loadPhotos.js"></script>
+    <script src="languageToggle.js"></script>
 </body>
 </html>
