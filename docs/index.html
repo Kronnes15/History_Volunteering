@@ -14,17 +14,18 @@
         <section class="description">
             <p>Це центральний опис, який знаходиться посередині сторінки. Тут ви можете додати будь-яку інформацію, яку хочете виділити.</p>
         </section>
-        <section class="description">
-            <p>Це центральний опис, який знаходиться посередині сторінки. Тут ви можете додати будь-яку інформацію, яку хочете виділити.</p>
-        </section>
         <section class="gallery">
             <h2>Заголовок 1</h2>
-            <button onclick="loadPhotos('photos1.html', 'gallery1')">Розгорнути фото</button>
-            <div id="gallery1"></div>
+            <button onclick="togglePhotos('photos1.html', 'gallery1', this)">Розгорнути фото</button>
+            <div id="gallery1" class="photo-container"></div>
             
             <h2>Заголовок 2</h2>
-            <button onclick="loadPhotos('photos2.html', 'gallery2')">Розгорнути фото</button>
-            <div id="gallery2"></div>
+            <button onclick="togglePhotos('photos2.html', 'gallery2', this)">Розгорнути фото</button>
+            <div id="gallery2" class="photo-container"></div>
+            
+            <h2>Заголовок 2</h2>
+            <button onclick="togglePhotos('photos3.html', 'gallery3', this)">Розгорнути фото</button>
+            <div id="gallery3" class="photo-container"></div>
             
             <!-- Додайте більше розділів за необхідності -->
         </section>
