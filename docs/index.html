@@ -33,20 +33,25 @@
             </p>
         </section>
         <section class="gallery">
-            <h2 class="gallery-header" id="header1">Посилку отримала школа клас психології для релаксу і реабілітації діток</h2>
+            <h2 class="gallery-header" id="header1" data-uk="Посилку отримала школа клас психології для релаксу і реабілітації діток" data-en="The package was received by the school class for relaxation and rehabilitation of children" data-fr="Le colis a été reçu par la classe scolaire pour la relaxation et la réhabilitation des enfants">Посилку отримала школа клас психології для релаксу і реабілітації діток</h2>
             <button onclick="togglePhotos('photos1.html', 'gallery1', this)" class="toggle-button">Розгорнути фото</button>
             <div id="gallery1" class="photo-container"></div>
             
-            <h2 class="gallery-header" id="header2">Заголовок 2</h2>
+            <h2 class="gallery-header" id="header2" data-uk="Заголовок 2" data-en="Title 2" data-fr="Titre 2">Заголовок 2</h2>
             <button onclick="togglePhotos('photos2.html', 'gallery2', this)" class="toggle-button">Розгорнути фото</button>
             <div id="gallery2" class="photo-container"></div>
             
-            <h2 class="gallery-header" id="header3">Заголовок 3</h2>
+            <h2 class="gallery-header" id="header3" data-uk="Заголовок 3" data-en="Title 3" data-fr="Titre 3">Заголовок 3</h2>
             <button onclick="togglePhotos('photos3.html', 'gallery3', this)" class="toggle-button">Розгорнути фото</button>
             <div id="gallery3" class="photo-container"></div>
             
             <!-- Додайте більше розділів за необхідності -->
         </section>
+        <div id="photo-modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-image">
+            <div id="caption"></div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Мій Сайт. Всі права захищені.</p>
