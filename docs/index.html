@@ -14,36 +14,24 @@
         <section class="description">
             <p>Це центральний опис, який знаходиться посередині сторінки. Тут ви можете додати будь-яку інформацію, яку хочете виділити.</p>
         </section>
+        <section class="description">
+            <p>Це центральний опис, який знаходиться посередині сторінки. Тут ви можете додати будь-яку інформацію, яку хочете виділити.</p>
+        </section>
         <section class="gallery">
-            <div class="photo">
-                <img src="image/test.jpg" alt="Photo 1">
-                <p>якась інформація про щось<br><br>some information about something
-                </p>
-            </div>
-            <div class="photo">
-                <img src="image/test.jpg" alt="Photo 2">
-                <p>фото з дитячого притулку</p>
-            </div>
-            <div class="photo">
-                <img src="image/test.jpg" alt="Photo 3">
-                <p>Фото автомобіля десь </p>
-            </div>
-            <div class="photo">
-                <img src="image/test.jpg" alt="Photo 4">
-                <p>Опис четвертої фотографії</p>
-            </div>
-            <div class="photo">
-                <img src="image/test.jpg" alt="Photo 5">
-                <p>Опис п'ятої фотографії</p>
-            </div>
-            <div class="photo">
-                <img src="image/test.jpg" alt="Photo 4">
-                <p>Опис четвертої фотографії</p>
-            </div>
+            <h2>Заголовок 1</h2>
+            <button onclick="loadPhotos('photos1.html', 'gallery1')">Розгорнути фото</button>
+            <div id="gallery1"></div>
+            
+            <h2>Заголовок 2</h2>
+            <button onclick="loadPhotos('photos2.html', 'gallery2')">Розгорнути фото</button>
+            <div id="gallery2"></div>
+            
+            <!-- Додайте більше розділів за необхідності -->
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Мій Сайт. Всі права захищені.</p>
     </footer>
+    <script src="loadPhotos.js"></script>
 </body>
 </html>
