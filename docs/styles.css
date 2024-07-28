@@ -65,8 +65,21 @@ button:hover {
 footer {
     background-color: #f4f4f4;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    color: #333333; /* Основний текст темно-сірий */
+    /* position: fixed; */
+    /* width: 100%; */
+    /* bottom: 0; */
+    margin-top: auto;
 }
+
+@media (max-width: 600px) {
+    .photo {
+        width: calc(50% - 20px); /* 50% ширини мінус відстань */
+    }
+}
+
+@media (max-width: 400px) {
+    .photo {
+        width: calc(100% - 20px); /* 100% ширини мінус відстань */
+    }
+}
+
