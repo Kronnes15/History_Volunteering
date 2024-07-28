@@ -1,23 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Pacifico', cursive;
     margin: 0;
     padding: 0;
     text-align: center;
+    color: #5634bc; /* Основний текст темно-сірий */
 }
 
 header {
-    background-color: #f4f4f4;
+    background-color: aqua;
     padding: 20px;
+    color: goldenrod; /* Колір заголовка червоний */
 }
 
 .description {
-    margin: 20px 0;
+    /*margin: 20px 0;*/
     padding: 20px;
-    background-color: #eaeaea;
+    background-color: aqua;
+    color: goldenrod; /* Основний текст темно-сірий */
 }
 
 .gallery {
     margin: 20px 0;
+}
+
+.gallery h2 {
+    color: #5bc0de; /* Колір заголовків у галереї бірюзовий */
+}
+
+button {
+    background-color: #5cb85c; /* Колір кнопки зелений */
+    color: #ffffff; /* Колір тексту кнопки білий */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #4cae4c; /* Темніший зелений при наведенні */
 }
 
 .photo-container {
@@ -33,6 +54,7 @@ header {
     border: 1px solid #ccc;
     width: calc(25% - 20px);
     box-sizing: border-box;
+    color: #333333; /* Основний текст темно-сірий */
 }
 
 .photo img {
@@ -46,4 +68,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    color: #333333; /* Основний текст темно-сірий */
 }
